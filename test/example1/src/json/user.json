@@ -1,0 +1,12 @@
+{
+  "_extend": "common/Base",
+  "id": "number#user id.#",
+  "name": "Jone",
+  "orders": "[Order]#User order list.#",
+  "signType": "$SignType#User register type.#",
+  "channel": {
+    "_name": "Channel",
+    "type": 1,
+    "delete": "boolean#Is deleted.#"
+  }
+}

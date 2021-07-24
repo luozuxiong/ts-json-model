@@ -1,0 +1,40 @@
+{
+  "title": "首页#整个页面的页面标题#",
+  "alias": "首页#整个页面的页面别名#",
+  "navigation": {
+    "component": "Navigation-01#组件的唯一标识#"
+  },
+  "backgroundColor": "white#page backgroundColor#",
+  "layout": [
+    {
+      "_name": "Component",
+      "component": "PageableItems#component id.#",
+      "elementName": "myComponent",
+      "style": {
+        "_name": "ComponentStyle",
+        "_extend": "SignType",
+        "backgroundColor": "white/clear/gradient",
+        "marginTop": "none/small/middle/large",
+        "marginBottom": "none/small/middle/large"
+      },
+      "property": {
+        "_name": "ComponentProperty",
+        "title": "myComponent",
+        "suffix": "sub title"
+      },
+      "data": {
+        "_name": "ComponentData",
+        "items": [
+          {
+            "_name": "DataItem",
+            "icon": "https://aa.aa.com/xxx.png",
+            "title": "adviser",
+            "onClick": {
+              "url": "native://login.bindWx?a=100"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
