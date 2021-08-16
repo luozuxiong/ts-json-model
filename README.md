@@ -1,53 +1,54 @@
 # ts-json-model
-在`Typescript`开发过程中，不可避免要编写`Model`；对于`Model`不多的简单应用倒是没有什么，但是对于复杂且`Model`较多、较复杂的应用，
-编写`Model`就变成了枯燥、繁琐的体力话；该工具就是为了解决找个问题而生；当然前提指需要提供对应Model的`json`文件即可。
 
-## 安装
+Read this in other languages:[简体中文](./Readme_zh-CN.md) | English
+
+In the development process of `Typescript`, it is inevitable to write `Model`; for simple applications with few `Models`, there is nothing, but for complex applications with more `Model` and more complex,
+Writing a `Model` becomes a boring and tedious physical language; the tool is born to solve a problem; of course, the premise is that the `json` file corresponding to the Model needs to be provided.
+## Installation
 ```
 $ npm install -g ts-json-model
 ```
-## 使用
-输出当前版本
+## Usage
+Output current version.
 ```
 $ j2m --v
 ```
-工具默认提供命令行是`j2m`，默认的工作目录是当前目录下的`./src/json`，
-输出目录是`./src/model`，当然也可以提供配置文件的形式覆盖默认的配置，文件名称是
-`j2m.config.json`，配置如下：
+The default command line provided by the tool is `j2m`, and the default working directory is `./src/json` in the current directory.
+The output directory is `./src/model`. Of course, a configuration file can also be provided to override the default configuration. The file name is`j2m.config.json`，The content is as follows：
 ```json
 {
   "src": "./src/json",
   "output": "./src/model"
 }
 ```
-### 关键字
-- `_extend`:表示要继承的类，如果不存在，那么新建一个空的类。
-- `_name`: 当前对象类的名称。
-- `$`: '自定义类名'，如果不存在活创建一个空的类。
-- `#{content}#`: 字段/属性的注释
+### Possible configuration keywords
+- `_extend` Indicates the class to be inherited. If it does not exist, create an empty class.
+- `_name`  The name of the current object class.
+- `$` Custom class name, if it does not exist or create an empty class.
+- `#{content}#` Comment on field/attribute
 
-接下来运行
+Next run
 ```
 $ j2m
 ```
 ## demo
-接下来以模块提供的example为例，讲解如何使用：
+Take the example provided by the project as an example:
 
-目录结构：
+Structure：
 
 ![image](http://static.94-me.com/images/2021/07/1.jpg)
 
-运行
+Run command: 
 ```
 npm run j2m
 ```
-过程
+You will see the following output in the console:
 
 ![image](http://static.94-me.com/images/2021/07/2.jpg)
 
-结果
+Screenshot of the final result:
 
 ![image](http://static.94-me.com/images/2021/07/3.jpg)
 
-介绍完毕，收工！
+Wow,the introduction is over, thank you！
 
