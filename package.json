@@ -1,7 +1,7 @@
 {
   "name": "ts-json-model",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.4",
+  "description": "A Typescript command line tool that converts JSON files into Model files",
   "main": "index.js",
   "bin": {
     "j2m": "./src/command.js"
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/luozuxiong/ts-json-model.git"
   },
-  "keywords": [],
+  "keywords": ["typescript","model"],
   "author": "",
   "license": "ISC",
   "bugs": {
